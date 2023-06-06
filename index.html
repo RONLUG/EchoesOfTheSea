@@ -8,10 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Quicksand:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@300;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="https://kit.fontawesome.com/7c4abc42c9.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
     <title>Echoes of the sea</title>
   </head>
   <body>
@@ -56,18 +58,23 @@
           </p>
         </div>
       </div>
-      <div class="mechanic-section">
+      <div class="mechanic-section" id="mechanic">
         <h1 class="sub-header">Ventured to the depth</h1>
         <div class="img-paragraph">
-          <img class="mechanic-concept-art" src="static/siren.jpg" alt="siren" />
+          <img
+            class="mechanic-concept-art"
+            src="static/siren.jpg"
+            alt="siren"
+          />
           <div class="paragraph mechanic">
             <h3>Echo</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              Echo is a siren that can lure and control the sea creatures with
+              her singing voice. Echo is designed to represent the light in this
+              dark sea. She has the appearance of the creature in the same name
+              in western mythology: half human, half fish. Echo's unique point
+              is her hair that resemble a fish's fin and tw fins on both side of
+              her tail.
             </p>
           </div>
         </div>
@@ -75,35 +82,36 @@
           <div class="paragraph mechanic">
             <h3>Lure</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              Lure is a skill that is with Echo since the beginning of the game.
+              When Echo is using Lure, she will create circle sound wave that
+              will lure the sea creatures around her into the circle. These sea
+              creatures can help her go through obstacles.
             </p>
           </div>
-          <img class="mechanic-concept-art" src="static/lure.jpg" alt="siren" />
+          <video autoplay muted loop class="mechanic-concept-art">
+            <source src="static/lure.mp4" type="video/mp4" />
+          </video>
+          <!-- <img class="mechanic-concept-art" src="static/lure.jpg" alt="siren" /> -->
         </div>
       </div>
-
-      <div class="content-section" id="mechanic">
-        <h3>Ventured to the depth</h3>
-        <div class="img-paragraph">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          </p>
+      <div class="concept-art-section">
+        <h1 class="sub-header">Concept arts</h1>
+        <div class="slideshow-container">
+          <button class="slide-btn" onclick="plusSlides(-1)">
+            <i class="fa-solid fa-less-than icons"></i>
+          </button>
+          <div class="slideshow">
+            <div class="slideshow-slide">
+              <img class="slide-concept-art" src="static/lure.jpg" alt="lure"/>
+            </div>
+            <div class="slideshow-slide">
+              <img class="slide-concept-art" src="static/boss_eel.jpg" alt="eel"/>
+            </div>
+          </div>
+          <button class="slide-btn" onclick="plusSlides(1)">
+            <i class="fa-solid fa-greater-than icons"></i>
+          </button>
         </div>
-        <div class="image-container"></div>
       </div>
-      <video autoplay muted loop width="500px">
-        <source src="static/lure.mp4" type="video/mp4" />
-      </video>
-      <img class="concept-art" src="static/boss_eel.jpg" alt="Dinosaur" />
-      <footer></footer>
-    </div>
   </body>
 </html>

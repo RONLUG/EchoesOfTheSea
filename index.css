@@ -115,7 +115,7 @@ h4 {
     padding: 3rem;
     padding-top: 0;
     width: 50%;
-    min-width: 450px;
+    min-width: 350px;
 }
 .paragraph-title {
     margin-bottom: 2rem;
@@ -138,8 +138,27 @@ h4 {
 
 .paragraph.mechanic {
     padding: 0rem;
+    min-width: 300px;
 }
-
+.slide-btn {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 3rem 1rem;
+  max-height: 10rem;
+  cursor: pointer;
+}
+.icons {
+  color: grey;
+}
+.slide-btn:hover .icons {
+  color: white;
+}
+.slideshow-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 /* .content-section {
   display: flex;
   flex-wrap: wrap;
@@ -151,8 +170,9 @@ h4 {
 * {
   box-sizing: border-box;
   color: #fefcfd;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.25em;
 }
 h1 {
   font-family: "Playfair Display", serif;
@@ -163,6 +183,13 @@ h1 {
 .concept-art {
   max-width: 48%;
   min-width: 400px;
+}
+.slide-concept-art {
+  max-width: 90%;
+}
+.slideshow-slide {
+  display: flex;
+  justify-content: center;
 }
 video {
   max-width: 100%;
