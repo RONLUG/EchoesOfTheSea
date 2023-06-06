@@ -20,8 +20,7 @@ body {
 
 h1,
 h2,
-h3,
-h4 {
+h3{
   font-family: "Playfair Display", serif;
   letter-spacing: 0.1em;
   font-weight: 400;
@@ -159,13 +158,6 @@ h4 {
   align-items: center;
   justify-content: space-between;
 }
-/* .content-section {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 4rem;
-} */
 
 * {
   box-sizing: border-box;
@@ -194,4 +186,41 @@ h1 {
 video {
   max-width: 100%;
   max-height: auto;
+}
+
+/* Footer ==================== */
+footer {
+  background-color: #364A44;
+  margin-top: 5rem;
+  padding: 3rem;
+}
+
+.footer-header {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+
+}
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.member-card {
+  text-align: center;
+  /* min-width: 8rem; */
+  width: 15rem;
+  padding: 2.5rem 1.5rem;
+}
+.member-potrait {
+  width: 100px;
+  border-radius: 100%;
+}
+
+.quote {
+  position: relative;
+}
+.signature {
+  position: absolute;
+  bottom: -2rem;
+  right: 1rem;
 }
