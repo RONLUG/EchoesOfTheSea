@@ -1,0 +1,170 @@
+img {
+  object-fit: contain;
+}
+
+.content-text {
+  min-width: 300px;
+  max-width: 30%;
+}
+.image-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  align-items: center;
+}
+body {
+  margin: 0;
+  background-color: #0c0716;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+.hero {
+  position: relative;
+}
+.hero-bg {
+  -webkit-mask-image: linear-gradient(
+    rgb(0 0 0 / 1),
+    rgb(0 0 0 / 0.5) 80%,
+    rgb(0 0 0/ 0)
+  );
+  mask-image: linear-gradient(
+    rgb(0 0 0 / 1),
+    rgb(0 0 0 / 0.5) 80%,
+    rgb(0 0 0/ 0)
+  );
+  filter: brightness(75%);
+  object-fit: cover;
+  width: 100%;
+  height: 550px;
+}
+.hero-content {
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+}
+
+.hero-icon {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 15%;
+}
+.hero-title {
+  position: relative;
+  margin-bottom: 0px;
+}
+.caption {
+  text-align: center;
+  z-index: 3;
+  margin-top: 0.25em;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.25rem 5rem;
+  /* gap: 5rem; */
+}
+.nav-link {
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: #e1e1e1;
+}
+.nav-link:hover {
+  color: white;
+}
+.symbol-container {
+  /* max-width: 300px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+/* Content ============================= */
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+/* Introduction ============================= */
+.introduction-section {
+  text-align: center;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.paragraph {
+    padding: 3rem;
+    padding-top: 0;
+    width: 50%;
+    min-width: 450px;
+}
+.paragraph-title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+/* Mechanics =============================== */
+.img-paragraph {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.mechanic-concept-art {
+    width: 30%;
+    min-width: 300px;
+    /* max-width: 500px; */
+}
+
+.paragraph.mechanic {
+    padding: 0rem;
+}
+
+/* .content-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+} */
+
+* {
+  box-sizing: border-box;
+  color: #fefcfd;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.25em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.concept-art {
+  max-width: 48%;
+  min-width: 400px;
+}
+video {
+  max-width: 100%;
+  max-height: auto;
+}
