@@ -50,6 +50,7 @@ h3{
     rgb(0 0 0 / 0.5) 80%,
     rgb(0 0 0/ 0)
   );
+  /* background-repeat: no-repeat; */
   filter: brightness(75%);
   object-fit: cover;
   width: 100%;
