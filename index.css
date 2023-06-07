@@ -221,18 +221,29 @@ video {
 }
 
 /* Footer ==================== */
+h4 {
+  margin-bottom: 0;
+}
 footer {
   background-color: #364A44;
   margin-top: 5rem;
   padding: 3rem;
 }
 
+.container.footer-container {
+  margin-top: 0;
+  width: 90%;
+  max-width: 1200px;
+}
 .footer-header {
   text-align: center;
   font-family: "Roboto", sans-serif;
+  font-size: 64px;
+  margin: 1rem;
 
 }
 .card-group {
+  margin: 4rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -244,7 +255,7 @@ footer {
   padding: 2.5rem 1.5rem;
 }
 .member-potrait {
-  width: 100px;
+  width: 125px;
   border-radius: 100%;
 }
 
