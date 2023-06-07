@@ -140,8 +140,12 @@ h3{
     align-items: center;
     justify-content: space-evenly;
     padding: 2rem;
-    gap: 2rem;
+    row-gap: 0rem;
+    column-gap: 2rem;
     flex-wrap: wrap;
+}
+.img-paragraph.r-wrap {
+  flex-wrap: wrap-reverse;
 }
 .mechanic-concept-art {
     width: 30%;
@@ -175,6 +179,7 @@ h3{
   gap: 0.5rem;
   text-align: justify;
 }
+
 /* Concept art ===================== */
 h1 {
   font-family: "Playfair Display", serif;
