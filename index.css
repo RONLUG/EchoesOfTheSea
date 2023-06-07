@@ -211,6 +211,7 @@ h1 {
 }
 .slide-concept-art {
   max-width: 90%;
+  max-height: 450px;
   object-fit: contain;
 }
 .slideshow-slide {
