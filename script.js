@@ -1,7 +1,7 @@
 let slideIndex = 0;
 let slides = document.querySelectorAll(".slideshow-slide");
 showSlides(slideIndex);
-
+// const interval = setInterval(()=>{plusSlides(1)}, 6000);
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
@@ -24,3 +24,4 @@ function showSlides(n) {
     }
     slides[slideIndex].style.display = "flex";
 }
+

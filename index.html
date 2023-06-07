@@ -12,7 +12,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <script src="https://kit.fontawesome.com/7c4abc42c9.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7c4abc42c9.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="script.js"></script>
     <title>Echoes of the sea</title>
   </head>
@@ -23,7 +26,7 @@
           <nav class="main-nav">
             <a class="nav-link" href="#hero">Overview</a>
             <a class="nav-link" href="#mechanic">Mechanic</a>
-            <a class="nav-link" href="#">Prototype</a>
+            <a class="nav-link" href="#prototype">Prototype</a>
             <a class="nav-link" href="#about-us">Our team</a>
           </nav>
         </div>
@@ -38,6 +41,7 @@
       </div>
     </div>
     <div class="container">
+      <!-- Overview ===================================== -->
       <div class="introduction-section">
         <div class="paragraph">
           <h2 class="paragraph-title">Game concept</h2>
@@ -58,6 +62,7 @@
           </p>
         </div>
       </div>
+      <!-- Mechanics ===================================== -->
       <div class="mechanic-section" id="mechanic">
         <h1 class="sub-header">Ventured to the depth</h1>
         <div class="img-paragraph">
@@ -91,9 +96,73 @@
           <video autoplay muted loop class="mechanic-concept-art">
             <source src="static/lure.mp4" type="video/mp4" />
           </video>
-          <!-- <img class="mechanic-concept-art" src="static/lure.jpg" alt="siren" /> -->
+        </div>
+        <div class="img-paragraph">
+          <img
+            class="mechanic-concept-art"
+            src="static/siren.jpg"
+            alt="siren"
+          />
+          <div class="paragraph mechanic">
+            <h3>Luminous</h3>
+            <p>
+              Echo is a siren that can lure and control the sea creatures with
+              her singing voice. Echo is designed to represent the light in this
+              dark sea. She has the appearance of the creature in the same name
+              in western mythology: half human, half fish. Echo's unique point
+              is her hair that resemble a fish's fin and tw fins on both side of
+              her tail.
+            </p>
+          </div>
+        </div>
+        <div class="img-paragraph">
+          <div class="paragraph mechanic">
+            <h3>Link</h3>
+            <p>
+              Echo is a siren that can lure and control the sea creatures with
+              her singing voice. Echo is designed to represent the light in this
+              dark sea. She has the appearance of the creature in the same name
+              in western mythology: half human, half fish. Echo's unique point
+              is her hair that resemble a fish's fin and tw fins on both side of
+              her tail.
+            </p>
+          </div>
+          <img
+            class="mechanic-concept-art"
+            src="static/siren.jpg"
+            alt="siren"
+          />
         </div>
       </div>
+      <!-- Prototype ===================================== -->
+      <div class="prototype-section" id="prototype">
+        <h1 class="sub-header">Lure interaction</h1>
+        <div class="protoype-container">
+          <div class="img-paragraph">
+            <video autoplay muted loop class="prototype-concept-art">
+              <source src="static/hermit_prototype.mp4" type="video/mp4" />
+            </video>
+            <div class="paragraph mechanic">
+              <h3>Hermit</h3>
+              <p>
+                Hermit is a creature that can obstruct echo and other creature. In this situation lure can be use to get hermit out of the way.
+              </p>
+            </div>
+          </div>
+          <div class="img-paragraph">
+            <video autoplay muted loop class="prototype-concept-art">
+              <source src="static/tuna_prototype.mp4" type="video/mp4" />
+            </video>
+            <div class="paragraph mechanic">
+              <h3>Small fish</h3>
+              <p>
+                Echo can control small fish to interact with some obstacle
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Concept art ===================================== -->
       <div class="concept-art-section">
         <h1 class="sub-header">Concept arts</h1>
         <div class="slideshow-container">
@@ -102,10 +171,17 @@
           </button>
           <div class="slideshow">
             <div class="slideshow-slide">
-              <img class="slide-concept-art" src="static/lure.jpg" alt="lure"/>
+              <img class="slide-concept-art" src="static/lure.jpg" alt="lure" />
             </div>
             <div class="slideshow-slide">
-              <img class="slide-concept-art" src="static/boss_eel.jpg" alt="eel"/>
+              <img class="slide-concept-art" src="static/cave.jpg" alt="cave" />
+            </div>
+            <div class="slideshow-slide">
+              <img
+                class="slide-concept-art"
+                src="static/boss_eel.jpg"
+                alt="eel"
+              />
             </div>
           </div>
           <button class="slide-btn" onclick="plusSlides(1)">
@@ -115,35 +191,74 @@
       </div>
     </div>
 
+    <!-- About us ===================================== -->
     <footer id="about-us">
+      <div class="container">
       <h2 class="footer-header">Team Backpain</h2>
       <div class="card-group">
         <div class="member-card">
-          <img class="member-potrait" src="static/cool_image.jpg" alt="cool image"/>
+          <img
+            class="member-potrait"
+            src="static/cool_image.jpg"
+            alt="cool image"
+          />
           <h4>Ed</h4>
-          <p class="quote">"I want to die" <span class="signature">-Noppakorn K.</span></p>
+          <p class="quote">
+            "I want to die" <span class="signature">-Noppakorn K.</span>
+          </p>
         </div>
         <div class="member-card">
-          <img class="member-potrait" src="static/cool_image.jpg" alt="cool image"/>
+          <img
+            class="member-potrait"
+            src="static/cool_image.jpg"
+            alt="cool image"
+          />
           <h4>Pu-u</h4>
-          <p class="quote">"Ate bread this morning"<span class="signature">-Ronnakorn L.</span></p>
+          <p class="quote">
+            "Ate bread this morning"<span class="signature">-Ronnakorn L.</span>
+          </p>
         </div>
         <div class="member-card">
-          <img class="member-potrait" src="static/cool_image.jpg" alt="cool image"/>
+          <img
+            class="member-potrait"
+            src="static/cool_image.jpg"
+            alt="cool image"
+          />
           <h4>Mook</h4>
-          <p class="quote">"Will survive 3 days without water"<span class="signature">-Arucha M.</span></p>
+          <p class="quote">
+            "Will survive 3 days without water"<span class="signature"
+              >-Arucha M.</span
+            >
+          </p>
         </div>
         <div class="member-card">
-          <img class="member-potrait" src="static/cool_image.jpg" alt="cool image"/>
+          <img
+            class="member-potrait"
+            src="static/cool_image.jpg"
+            alt="cool image"
+          />
           <h4>Nop</h4>
-          <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"<span class="signature">-Ekawee V.</span></p>
+          <p class="quote">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore"<span
+              class="signature"
+              >-Ekawee V.</span
+            >
+          </p>
         </div>
         <div class="member-card">
-          <img class="member-potrait" src="static/cool_image.jpg" alt="cool image"/>
+          <img
+            class="member-potrait"
+            src="static/cool_image.jpg"
+            alt="cool image"
+          />
           <h4>Gen</h4>
-          <p class="quote">"Brain surgeried"<span class="signature">-Tapanut C.</span></p>
+          <p class="quote">
+            "Brain surgeried"<span class="signature">-Tapanut C.</span>
+          </p>
         </div>
 
+      </div>
       </div>
     </footer>
   </body>
