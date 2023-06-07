@@ -231,6 +231,21 @@ video {
   font-size: 16px;
   margin-top: 1rem;
   z-index: 5;
+  text-align: center;
+}
+.boss-concept-art-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 400px;
+  padding: 1rem;
+}
+
+.boss-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 /* Footer ==================== */
 h4 {
