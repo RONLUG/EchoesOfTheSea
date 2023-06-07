@@ -10,6 +10,9 @@ img {
   object-fit: contain;
 }
 
+.section {
+  margin-bottom: 4rem;
+}
 .content-text {
   min-width: 300px;
   max-width: 30%;
@@ -129,6 +132,9 @@ h3{
     text-align: center;
 }
 /* Mechanics =============================== */
+.introduction-passage {
+  text-align: center;
+}
 .img-paragraph {
     display: flex;
     align-items: center;
@@ -164,6 +170,10 @@ h3{
 .prototype-concept-art {
   width: 60%;
   min-width: 300px;
+}
+.img-paragraph.reduce-gap {
+  gap: 0.5rem;
+  text-align: justify;
 }
 /* Concept art ===================== */
 h1 {

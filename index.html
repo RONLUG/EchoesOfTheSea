@@ -42,7 +42,7 @@
     </div>
     <div class="container">
       <!-- Overview ===================================== -->
-      <div class="introduction-section">
+      <div class="introduction-section section">
         <div class="paragraph">
           <h2 class="paragraph-title">Game concept</h2>
           <p>
@@ -63,7 +63,7 @@
         </div>
       </div>
       <!-- Mechanics ===================================== -->
-      <div class="mechanic-section" id="mechanic">
+      <div class="mechanic-section section" id="mechanic">
         <h1 class="sub-header">Ventured to the depth</h1>
         <div class="img-paragraph">
           <img
@@ -98,20 +98,17 @@
           </video>
         </div>
         <div class="img-paragraph">
-          <img
-            class="mechanic-concept-art"
-            src="static/siren.jpg"
-            alt="siren"
-          />
+          <video autoplay muted loop class="mechanic-concept-art">
+            <source src="static/luminous.mp4" type="video/mp4" />
+          </video>
           <div class="paragraph mechanic">
             <h3>Luminous</h3>
             <p>
-              Echo is a siren that can lure and control the sea creatures with
-              her singing voice. Echo is designed to represent the light in this
-              dark sea. She has the appearance of the creature in the same name
-              in western mythology: half human, half fish. Echo's unique point
-              is her hair that resemble a fish's fin and tw fins on both side of
-              her tail.
+              Luminous is a passive skill that will make echo glows constantly,
+              which will help her with travelling through the dark. But be
+              careful as the glow will fade every time echo uses her voice, and
+              it will be gone temporarily. As long as she doesn't use her voice,
+              the glow will come back.
             </p>
           </div>
         </div>
@@ -119,51 +116,56 @@
           <div class="paragraph mechanic">
             <h3>Link</h3>
             <p>
-              Echo is a siren that can lure and control the sea creatures with
-              her singing voice. Echo is designed to represent the light in this
-              dark sea. She has the appearance of the creature in the same name
-              in western mythology: half human, half fish. Echo's unique point
-              is her hair that resemble a fish's fin and tw fins on both side of
-              her tail.
+              Link is a skill that allows Echo to drop her voice at the location
+              she's at, which will not be activated until it is command to do
+              so. Once the voice is activated, it works similarly to the Lure
+              skill, but it will attract sea creature to the location that she
+              drop the voice instead of coming to her. Link also has limited
+              usage.
             </p>
           </div>
-          <img
-            class="mechanic-concept-art"
-            src="static/siren.jpg"
-            alt="siren"
-          />
+          <video autoplay muted loop class="mechanic-concept-art">
+            <source src="static/link.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
       <!-- Prototype ===================================== -->
-      <div class="prototype-section" id="prototype">
+      <div class="prototype-section section" id="prototype">
         <h1 class="sub-header">Lure interaction</h1>
+        <p class="introduction-passage">
+          Lure is Echo's main skill. Lure is quite a straight forward skill, it
+          is use to lure sea creatures to her with her voice. But Lure still has
+          it's limits, such as the voice will not be able to travel through
+          obstacles, has limited usage, and different creatures may have various
+          reaction to it.
+        </p>
         <div class="protoype-container">
-          <div class="img-paragraph">
+          <div class="img-paragraph reduce-gap">
             <video autoplay muted loop class="prototype-concept-art">
               <source src="static/hermit_prototype.mp4" type="video/mp4" />
             </video>
             <div class="paragraph mechanic">
               <h3>Hermit</h3>
               <p>
-                Hermit is a creature that can obstruct echo and other creature. In this situation lure can be use to get hermit out of the way.
+                Hermit is a type of animal that lives on rocks and sea floor.
+                They can block Echo and other creatures from passing them. They
+                can be remove by using Lure or Link skill.
               </p>
             </div>
           </div>
-          <div class="img-paragraph">
+          <div class="img-paragraph reduce-gap">
             <video autoplay muted loop class="prototype-concept-art">
               <source src="static/tuna_prototype.mp4" type="video/mp4" />
             </video>
             <div class="paragraph mechanic">
-              <h3>Small fish</h3>
-              <p>
-                Echo can control small fish to interact with some obstacle
-              </p>
+              <h3>Tuna</h3>
+              <p>Tuna is the type of fish that follows Echo arounds after using Lure. If Echo has reached her limited usage of skills, she will not be able to lure more tuna in. If she wants to lure in other creature such as Hermit after she's reached her limited usage, she would have to let go of all of her fishes in order to lure in the hermit. Tunas can interact with obstacles in the setting, like eating vines off to clear the path.</p>
             </div>
           </div>
         </div>
       </div>
       <!-- Concept art ===================================== -->
-      <div class="concept-art-section">
+      <div class="concept-art-section section">
         <h1 class="sub-header">Concept arts</h1>
         <div class="slideshow-container">
           <button class="slide-btn" onclick="plusSlides(-1)">
@@ -183,6 +185,20 @@
                 alt="eel"
               />
             </div>
+            <div class="slideshow-slide">
+              <img
+                class="slide-concept-art"
+                src="static/boss.png"
+                alt="final boss"
+              />
+            </div>
+            <div class="slideshow-slide">
+              <img
+                class="slide-concept-art"
+                src="static/symbol_all.jpg"
+                alt="Symbols"
+              />
+            </div>
           </div>
           <button class="slide-btn" onclick="plusSlides(1)">
             <i class="fa-solid fa-greater-than icons"></i>
@@ -194,71 +210,72 @@
     <!-- About us ===================================== -->
     <footer id="about-us">
       <div class="container">
-      <h2 class="footer-header">Team Backpain</h2>
-      <div class="card-group">
-        <div class="member-card">
-          <img
-            class="member-potrait"
-            src="static/cool_image.jpg"
-            alt="cool image"
-          />
-          <h4>Ed</h4>
-          <p class="quote">
-            "I want to die" <span class="signature">-Noppakorn K.</span>
-          </p>
+        <h2 class="footer-header">Team Backpain</h2>
+        <div class="card-group">
+          <div class="member-card">
+            <img
+              class="member-potrait"
+              src="static/cool_image.jpg"
+              alt="cool image"
+            />
+            <h4>Ed</h4>
+            <p class="quote">
+              "I want to die" <span class="signature">-Noppakorn K.</span>
+            </p>
+          </div>
+          <div class="member-card">
+            <img
+              class="member-potrait"
+              src="static/cool_image.jpg"
+              alt="cool image"
+            />
+            <h4>Pu-u</h4>
+            <p class="quote">
+              "Ate bread this morning"<span class="signature"
+                >-Ronnakorn L.</span
+              >
+            </p>
+          </div>
+          <div class="member-card">
+            <img
+              class="member-potrait"
+              src="static/cool_image.jpg"
+              alt="cool image"
+            />
+            <h4>Mook</h4>
+            <p class="quote">
+              "Will survive 3 days without water"<span class="signature"
+                >-Arucha M.</span
+              >
+            </p>
+          </div>
+          <div class="member-card">
+            <img
+              class="member-potrait"
+              src="static/cool_image.jpg"
+              alt="cool image"
+            />
+            <h4>Nop</h4>
+            <p class="quote">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore"<span
+                class="signature"
+                >-Ekawee V.</span
+              >
+            </p>
+          </div>
+          <div class="member-card">
+            <img
+              class="member-potrait"
+              src="static/cool_image.jpg"
+              alt="cool image"
+            />
+            <h4>Gen</h4>
+            <p class="quote">
+              "Brain surgeried"<span class="signature">-Tapanut C.</span>
+            </p>
+          </div>
         </div>
-        <div class="member-card">
-          <img
-            class="member-potrait"
-            src="static/cool_image.jpg"
-            alt="cool image"
-          />
-          <h4>Pu-u</h4>
-          <p class="quote">
-            "Ate bread this morning"<span class="signature">-Ronnakorn L.</span>
-          </p>
-        </div>
-        <div class="member-card">
-          <img
-            class="member-potrait"
-            src="static/cool_image.jpg"
-            alt="cool image"
-          />
-          <h4>Mook</h4>
-          <p class="quote">
-            "Will survive 3 days without water"<span class="signature"
-              >-Arucha M.</span
-            >
-          </p>
-        </div>
-        <div class="member-card">
-          <img
-            class="member-potrait"
-            src="static/cool_image.jpg"
-            alt="cool image"
-          />
-          <h4>Nop</h4>
-          <p class="quote">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore"<span
-              class="signature"
-              >-Ekawee V.</span
-            >
-          </p>
-        </div>
-        <div class="member-card">
-          <img
-            class="member-potrait"
-            src="static/cool_image.jpg"
-            alt="cool image"
-          />
-          <h4>Gen</h4>
-          <p class="quote">
-            "Brain surgeried"<span class="signature">-Tapanut C.</span>
-          </p>
-        </div>
-
-      </div>
       </div>
     </footer>
   </body>
