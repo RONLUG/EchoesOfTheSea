@@ -132,6 +132,9 @@ h3{
     text-align: center;
 }
 /* Mechanics =============================== */
+.mechanic-block-container .img-paragraph:nth-child(even) {
+  flex-direction: row-reverse;
+}
 .introduction-passage {
   text-align: center;
 }
@@ -144,9 +147,9 @@ h3{
     column-gap: 2rem;
     flex-wrap: wrap;
 }
-.img-paragraph.r-wrap {
+/* .img-paragraph.r-wrap {
   flex-wrap: wrap-reverse;
-}
+} */
 .mechanic-concept-art {
     width: 30%;
     min-width: 300px;
