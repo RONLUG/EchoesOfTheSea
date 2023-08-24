@@ -91,11 +91,13 @@ h3{
 .main-nav {
   display: flex;
   justify-content: space-evenly;
+  gap: 1rem;
   padding: 1.25rem 5rem;
   /* gap: 5rem; */
 }
 .nav-link {
   font-family: "Playfair Display", serif;
+  margin: 0;
   text-decoration: none;
   letter-spacing: 0.1em;
   font-weight: 400;
@@ -308,3 +310,9 @@ footer {
   right: 1rem;
 }
 
+
+.more-info {
+  text-align: center;
+  margin: auto;
+  font-size: 1.1em;
+}
